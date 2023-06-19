@@ -1,0 +1,34 @@
+.game {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  padding: 30px;
+
+  .game-elements {
+    display: flex;
+    gap: 20px;
+
+    .game-board {
+      cursor: pointer;
+      display: grid;
+      grid-template-columns: 50px 50px 50px;
+      grid-template-rows: 50px 50px 50px;
+      font-size: 20px;
+      transition: 0.2s all ease-in-out;
+
+      .board-cell:active{
+        scale: .96;
+      }
+
+      .board-cell {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid black;
+      }
+    }
+  }
+}
