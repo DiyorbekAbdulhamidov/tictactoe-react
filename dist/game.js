@@ -37,7 +37,6 @@ class Game extends react_1.default.Component {
         for (let i = 0; i < 9; i++) {
             boardElements.push(react_1.default.createElement("div", { onClick: () => this.handlePlayerClick(i), key: i, className: "board-cell" }, this.state.board[i] || null));
         }
-        console.log(boardElements);
         return (react_1.default.createElement("div", { className: "game" },
             react_1.default.createElement("div", { className: "game-elements" },
                 react_1.default.createElement("div", { className: "game-board" }, boardElements),
